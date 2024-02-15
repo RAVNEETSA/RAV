@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+     .up{
+            display: grid;
+            place-items:right;
+            position: relative;
+             margin: 80%;
+           top:750px;
+            }
+        .down{
+             display: flex;
+            }   
+        .left{ 
+            display:grid;
+           position: relative;
+           
+        }
+        .downball{
+            display:flex;
+            position: relative;
+           
+        }
+        .ball{
+        width:60px;
+        height:60px;
+        border-radius:60%;
+        position:relative;
+        place-content:center;
+        animation: bounce 2s infinite;
+
+    }
+    @keyframes bounce{
+        10%,10%{
+            transform: translate(-60);
+        }
+        40%{
+            transform: translateY(-50px);
+        }
+        20%{
+            transform: translateY(-100px);
+        }
+        40%{
+            transform: translateY(-50px);
+        }
+    }
+    .ball:nth-child(1)
+{
+
+    background: yellow;
+    animation-delay: 0.1s;
+    text-align: center;
+}
+.ball:nth-child(2)
+{
+   
+background: red;
+animation-delay: 0.2s;
+text-align: center;
+}
+.ball:nth-child(3)
+{
+background:blueviolet;
+animation-delay: 0.3s;
+text-align: center;
+
+}
+.ball:nth-child(4)
+{
+background: pink;
+animation-delay: 0.4s;
+text-align: center;
+}
+.ball:nth-child(5)
+{
+    text-align: center;
+background: purple;
+animation-delay: 0.5s;
+text-align: center;
+}
+.ball:nth-child(6)
+{
+    text-align: center;
+background: red;
+animation-delay: 0.6s;
+}
+.ball:nth-child(7){
+background-color: blueviolet;
+}
+.ball:nth-child(8){
+background-color: blueviolet;
+}
+
+    </style>
+</head>
+<body>
+    <div class="up">
+        <div class="ball">r</div>
+        <div class="ball">a</div>
+        <div class="ball">v</div>
+        <div class="ball">n</div>
+        <div class="ball">e</div>
+        <div class="ball">e</div>
+        <div class="ball">t</div>
+        <div class="ball"></div>
+    </div>
+    <div class="down">
+        <div class="ball">a</div>
+        <div class="ball">m</div>
+        <div class="ball">a</div>
+        <div class="ball">n</div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="left">
+        <div class="ball">m</div>
+        <div class="ball">a</div>
+        <div class="ball">n</div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+    <div class="downball">
+        <div class="ball">n</div>
+        <div class="ball">a</div>
+        <div class="ball">v</div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
